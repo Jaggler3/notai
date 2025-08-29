@@ -8,7 +8,6 @@
     "dev": "tsc --watch",
     "build:clean": "rm -rf dist && tsc",
     "dev:clean": "rm -rf dist && tsc --watch",
-    "zip": "npm run build && zip -r reddit-post-filter.zip . -x '*.git*' 'node_modules/*' '*.zip' 'src/*' 'tsconfig.json' 'package*.json'",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",

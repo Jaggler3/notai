@@ -8,6 +8,7 @@
     "dev": "tsc --watch",
     "build:clean": "rm -rf dist && tsc",
     "dev:clean": "rm -rf dist && tsc --watch",
+    "zip": "npm run build && zip -r builds/notai.zip . -x '*.git*' 'node_modules/*' 'builds/*' 'src/*' 'tsconfig.json' 'package*.json'",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",

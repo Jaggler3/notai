@@ -38,7 +38,7 @@ If you find this extension helpful and would like to support its development, co
 
 <div align="center">
   <a href="https://buymeacoffee.com/martindarazs" target="_blank">
-    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=martindarazs&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me a Coffee">
+    <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me a Coffee">
   </a>
 </div>
 

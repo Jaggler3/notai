@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NotAI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>NotAI</h1>
+      <div class="filter-toggle-container">
+        <label class="toggle-label" for="filterToggle">Enable Filtering</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="filterToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </header>
+
+    <div class="advanced-section">
+      <button class="advanced-toggle" id="advancedToggle">
+        <span class="advanced-text">Advanced</span>
+        <span class="advanced-arrow">▼</span>
+      </button>
+      
+      <div class="advanced-content" id="advancedContent">
+        <section class="score-threshold">
+          <h2>Score Threshold</h2>
+          <div class="threshold-control">
+            <label for="scoreThreshold">Minimum score to filter posts:</label>
+            <div class="threshold-slider-container">
+              <input type="range" id="scoreThreshold" min="0" max="100" value="10" step="5">
+              <span class="threshold-value" id="thresholdValue">10</span>
+            </div>
+            <p class="threshold-description">
+              Posts with scores below this threshold will not be filtered. 
+              Higher threshold = more aggressive filtering.
+            </p>
+          </div>
+        </section>
+
+        <!-- <section class="filter-info">
+          <h2>Current Filter</h2>
+          <div class="filter-description">
+            <p>Automatically filters Reddit posts that contain:</p>
+            <ul>
+              <li>Em dashes (—)</li>
+              <li>Colons (:)</li>
+            </ul>
+            <p class="note">Posts are hidden with a "[filtered]" placeholder and can be shown again by clicking on the placeholder.</p>
+          </div>
+        </section> -->
+
+        <section class="stats">
+          <h2>Statistics</h2>
+          <div class="stat-item">
+            <span class="stat-label">Filter Status:</span>
+            <span class="stat-value" id="filterStatus">Active</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Posts Hidden:</span>
+            <span class="stat-value" id="postsHidden">0</span>
+          </div>
+        </section>
+
+        <section class="actions">
+          <h2>Actions</h2>
+          <div class="action-buttons">
+            <button id="showAll" class="btn btn-primary">Show All Posts</button>
+            <button id="refresh" class="btn btn-secondary">Refresh Page</button>
+          </div>
+        </section>
+
+        <section class="hidden-posts" id="hiddenPostsSection">
+          <h2>Hidden Posts</h2>
+          <div class="hidden-posts-list" id="hiddenPostsList">
+            <!-- Hidden posts will be populated here -->
+          </div>
+        </section>
+
+        <section class="support-section">
+          <h2>Support the Project</h2>
+          <div class="support-content">
+            <p>If you find this extension helpful, consider buying me a coffee!</p>
+            <a href="https://buymeacoffee.com/martindarazs" target="_blank" class="coffee-link">
+              <span class="coffee-icon">☕</span>
+              Buy Me a Coffee
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="./dist/popup.js"></script>
+</body>
+</html>

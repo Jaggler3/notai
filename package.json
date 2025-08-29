@@ -1,0 +1,34 @@
+{
+  "name": "reddit-post-filter",
+  "version": "1.0.0",
+  "description": "A Chrome extension that filters Reddit posts based on title and body content",
+  "main": "content.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "build:clean": "rm -rf dist && tsc",
+    "dev:clean": "rm -rf dist && tsc --watch",
+    "zip": "npm run build && zip -r reddit-post-filter.zip . -x '*.git*' 'node_modules/*' '*.zip' 'src/*' 'tsconfig.json' 'package*.json'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "reddit",
+    "filter",
+    "content-filtering",
+    "browser-extension"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/reddit-post-filter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/reddit-post-filter/issues"
+  },
+  "homepage": "https://github.com/yourusername/reddit-post-filter#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.0",
+    "typescript": "^5.9.2"
+  }
+}

@@ -41,10 +41,10 @@ export function calculateScore(ariaLabel: string | null, article: HTMLElement, f
 
 export function extractPostTitle(article: HTMLElement): string {
   const titleSelectors = [
+    'h1, h2, h3',
     '[data-testid="post-title"]',
     'h3[class*="title"]',
     'a[class*="title"]',
-    'h1, h2, h3',
     '.title'
   ];
   

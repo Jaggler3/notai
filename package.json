@@ -1,5 +1,5 @@
 {
-  "name": "reddit-post-filter",
+  "name": "notai",
   "version": "1.0.0",
   "description": "A Chrome extension that filters Reddit posts based on title and body content",
   "main": "content.js",
@@ -21,7 +21,7 @@
     "content-filtering",
     "browser-extension"
   ],
-  "author": "Your Name",
+  "author": "Martin Darazs",
   "license": "MIT",
   "repository": {
     "type": "git",

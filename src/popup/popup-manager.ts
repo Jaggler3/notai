@@ -1,4 +1,3 @@
-import { StorageData } from '../types';
 import { StorageManager } from './storage-manager';
 import { TabCommunicator } from './tab-communicator';
 import { MessageDisplay } from './message-display';
@@ -53,7 +52,7 @@ export class PopupManager {
   private startPeriodicUpdates(): void {
     this.updateInterval = setInterval(() => {
       this.updateStats();
-    }, 2000);
+    }, 2000) as unknown as number;
   }
 
   private stopPeriodicUpdates(): void {
